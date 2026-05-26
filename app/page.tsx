@@ -258,15 +258,15 @@ export default function Home() {
             <span className="bg-gradient-to-r from-[#7700FF] to-[#00FF77] bg-clip-text text-transparent">PelletQ-AI</span>
           </h1>
           <p className="mt-2 text-base font-medium text-slate-600">AI-integrated fish pellet production</p>
-          <div className="mt-4 grid w-full grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="mt-3 mx-auto mb-[-20px]  flex flex-auto  flex-wrap justify-items-center justify-center-safe ">
             {partnerLogos.map((partner) => (
-              <div key={partner.label} className="relative mx-auto overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-2 shadow-sm">
+              <div key={partner.label} className="relative m-2 min-w-[50px] overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-3 shadow-sm">
                 <Image
                   src={partner.src}
                   alt={partner.alt}
-                  height={64}
-                  width={64}
-                  className="h-10 w-auto object-contain"
+                  height={100}
+                  width={100}
+                  className="h-7 w-fit object-contain"
                 />
               </div>
             ))}
@@ -283,11 +283,11 @@ export default function Home() {
           ))}
         </motion.div>
 
-        <motion.section variants={containerAnimation} className="grid gap-3 sm:grid-cols-3" aria-label="Research focus">
+        {/* <motion.section variants={containerAnimation} className="grid gap-3 sm:grid-cols-3" aria-label="Research focus">
           {researchFocusCards.map((card) => (
             <ResearchFocusCard key={card.title} card={card} />
           ))}
-        </motion.section>
+        </motion.section> */}
 
         <motion.div variants={itemAnimation}>
           <Footer />
