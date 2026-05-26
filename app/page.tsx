@@ -260,7 +260,7 @@ export default function Home() {
           <p className="mt-2 text-base font-medium text-slate-600">AI-integrated fish pellet production</p>
           <div className="mt-3 mx-auto mb-[-20px]  flex flex-auto  flex-wrap justify-items-center justify-center-safe ">
             {partnerLogos.map((partner) => (
-              <div key={partner.label} className="relative m-2 min-w-[50px] overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-3 shadow-sm">
+              <div key={partner.label} className="relative m-2  overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-2 shadow-sm">
                 <Image
                   src={partner.src}
                   alt={partner.alt}
